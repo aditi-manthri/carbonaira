@@ -30,7 +30,7 @@ const App = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3001/calculate', {
+      const response = await fetch('https://carbonaira-server.vercel.app/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
