@@ -12,7 +12,7 @@ var corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-app.post('/calculate', (req, res) => {
+app.post('/', (req, res) => {
     try {
         const {
             electricityUsage,
