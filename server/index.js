@@ -14,6 +14,10 @@ var corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.json({ message: 'Carbon calculator API is running' });
+});
+
 app.post('/', (req, res) => {
     try {
         const {
