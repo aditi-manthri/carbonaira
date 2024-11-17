@@ -11,6 +11,9 @@ var corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
+app.use("/", (req, res) => {
+    res.send("Server is Running");}
+);
 
 app.post('/calculate', (req, res) => {
     try {
